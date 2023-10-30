@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 39 to 42 "Q-5"</title>
+</head>
+<body>
+    <script>
+        function customIndexOf(string, searchChar) {
+  for (var i = 0; i < string.length; i++) {
+    if (string[i] === searchChar) {
+      return i;
+    }
+  }
+  return -1; // If searchChar is not found in the string
+}
+
+// Example usage:
+var string = "Hello, world!";
+var searchChar = "o";
+var index = customIndexOf(string, searchChar);
+console.log("Index of '" + searchChar + "': " + index);
+    </script>
+</body>
+</html>
