@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 39 to 42 "Q-10"</title>
+</head>
+<body>
+    <script>
+        function calculateCurrencyNotes(amount) {
+  var note100 = Math.floor(amount / 100);
+  var note50 = Math.floor((amount % 100) / 50);
+  var note10 = Math.floor(((amount % 100) % 50) / 10);
+
+  return {
+    note100: note100,
+    note50: note50,
+    note10: note10
+  };
+}
+
+// Example usage:
+var amount = 5550; // Input in hundreds
+var notes = calculateCurrencyNotes(amount);
+
+console.log("Number of 100 notes: " + notes.note100);
+console.log("Number of 50 notes: " + notes.note50);
+console.log("Number of 10 notes: " + notes.note10);
+    </script>
+</body>
+</html>

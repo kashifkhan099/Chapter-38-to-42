@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 39 to 42 "Q-9"</title>
+</head>
+<body>
+    <script>
+        function calculateOvertimePay(hoursWorked) {
+  var regularHours = 40;
+  var overtimeRate = 12.00;
+  var overtimeHours = 0;
+  var overtimePay = 0;
+
+  if (hoursWorked > regularHours) {
+    overtimeHours = hoursWorked - regularHours;
+    overtimePay = overtimeHours * overtimeRate;
+  }
+
+  return overtimePay;
+}
+
+// Example usage:
+var hoursWorked = 45;
+var overtimePay = calculateOvertimePay(hoursWorked);
+
+console.log("Overtime pay: RS. " + overtimePay.toFixed(2));
+    </script>
+</body>
+</html>

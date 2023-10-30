@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 39 to 42 "Q-7"</title>
+</head>
+<body>
+    <script>
+        function countSuccessiveVowels(text) {
+  var count = 0;
+  var vowels = ['a', 'e', 'i', 'o', 'u'];
+
+  for (var i = 0; i < text.length - 1; i++) {
+    var currentChar = text[i].toLowerCase();
+    var nextChar = text[i + 1].toLowerCase();
+
+    switch (currentChar) {
+      case 'a':
+      case 'e':
+      case 'i':
+      case 'o':
+      case 'u':
+        if (vowels.includes(nextChar)) {
+          count++;
+        }
+        break;
+      default:
+        break;
+    }
+  }
+
+  return count;
+}
+
+// Example usage:
+var text = "please read this application and give gratuity";
+var count = countSuccessiveVowels(text);
+console.log(count);
+        
+    </script>
+</body>
+</html>

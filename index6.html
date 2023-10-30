@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 39 to 42 "Q-6"</title>
+</head>
+<body>
+    <script>
+        function deleteVowels(sentence) {
+  var vowels = ['a', 'e', 'i', 'o', 'u'];
+  var result = '';
+
+  for (var i = 0; i < sentence.length; i++) {
+    if (!vowels.includes(sentence[i].toLowerCase())) {
+      result += sentence[i];
+    }
+  }
+
+  return result;
+}
+
+// Example usage:
+var sentence = "Hello, how are you?";
+var result = deleteVowels(sentence);
+console.log(result);
+
+    </script>
+</body>
+</html>
