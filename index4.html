@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 39 to 42 "Q-4"</title>
+</head>
+<body>
+    <script>
+        function calculateAverage(subject1, subject2, subject3) {
+  var totalMarks = subject1 + subject2 + subject3;
+  var average = totalMarks / 3;
+  return average;
+}
+
+function calculatePercentage(subject1, subject2, subject3) {
+  var totalMarks = subject1 + subject2 + subject3;
+  var totalPossibleMarks = 300; // Assuming each subject is out of 100 marks
+  var percentage = (totalMarks / totalPossibleMarks) * 100;
+  return percentage;
+}
+
+function mainFunction(subject1, subject2, subject3) {
+  var average = calculateAverage(subject1, subject2, subject3);
+  var percentage = calculatePercentage(subject1, subject2, subject3);
+  console.log("Average marks: " + average);
+  console.log("Percentage: " + percentage + "%");
+}
+
+// Example usage:
+var subject1Marks = 80;
+var subject2Marks = 90;
+var subject3Marks = 95;
+mainFunction(subject1Marks, subject2Marks, subject3Marks);
+    </script>
+</body>
+</html>

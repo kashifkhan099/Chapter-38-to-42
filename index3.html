@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 39 to 42 "Q-3"</title>
+</head>
+<body>
+    <script>
+        function calculateTriangleArea(a, b, c) {
+  var s = (a + b + c) / 2;
+  var area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+  return area;
+}
+
+// Example usage:
+var sideA = 5;
+var sideB = 7;
+var sideC = 9;
+var triangleArea = calculateTriangleArea(sideA, sideB, sideC);
+console.log("The area of the triangle is: " + triangleArea);
+        
+    </script>
+</body>
+</html>
